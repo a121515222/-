@@ -1,0 +1,509 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*共同lay out*/
+.h2,.h3,p{
+    font-family: "微軟正黑體";
+}
+.content{
+    width: 1024px;
+    margin: 0 auto;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(0, 0, 0, 0.6)
+   
+}
+.header ul{
+    padding: 0 30px 0 30px;
+    width: 300px;
+    display:flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+.header a{
+    width: 50px;
+    padding:23px 0 23px 0;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:white;   
+}
+.header li{ 
+    border-bottom: 5px solid transparent;
+}
+.header li:hover{
+    border-bottom: 5px solid #00cc99;
+}
+.header a:hover{
+    color:#00cc99;
+}
+.Hexschool_footer{
+    padding:50px 30px 50px 30px;
+    background: #323228;
+    display: flex;
+    justify-content: space-between;
+}
+.Hexschool_footer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Hexschool_footer li{
+    margin:0 15px 15px 0 ;
+}
+.Hexschool_footer h3{
+    color:white;
+    padding-left: 20px;
+    font-size: 12px;
+}
+::placeholder{
+    padding-left: 1ex;
+}
+/*首頁*/
+.Hexschool_home_page_header_and_banner{
+    background: url(https://upload.cc/i1/2021/06/02/A0bLja.jpg
+);
+}
+.Home_page_title{
+    padding: 30px 0 55px 30px;
+}
+.Hexschool_home_page_header_and_banner h2{
+    font-size: 36px;
+    color: white;
+    padding:30px 0 30px 0  ;
+}
+.Hexschool_home_page_header_and_banner span{
+    font-size:36 ;
+    color:#00cc99;
+}
+.Home_page_title a{
+    text-align: center;
+    width: 160px;
+    display: block;
+    color:white;
+    font-size: 26px;
+    text-decoration: none;
+    border:1px solid #00cc99;
+    background: #00cc99;
+    border-radius: 5px;
+    padding:10px 30px 10px 30px;
+}
+.Home_page_title a:hover{
+    border:1px solid #cc0055;
+    background: #cc0055;
+}
+.home_page_course_presentation{
+    padding:50px 20px 50px 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.presentation,.home_page_course_compare{
+    display: flex;
+    align-items: baseline;
+}
+.home_page_course_presentation h2,.home_page_course_compare h2{
+    color:#00cc99;
+    font-size: 26px; 
+}
+.home_page_course_presentation span,.home_page_course_compare span{
+    display: block;
+    padding:0 0 0 20px;
+    font-size:18px;
+    color:#b6b6b6;   
+}
+.home_page_course_presentation a{
+    border:2px solid #00cc99;
+    border-radius: 5px;
+    display: block;
+    padding:5px 10px 5px 10px;
+    text-decoration: none;
+    color:#00cc99;
+}
+.home_page_course_presentation a:hover{
+    color:red;
+    border:red 2px solid;
+}
+.home_page_course_list{
+    padding:30px 20px 50px 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.home_page_course_list li{
+    padding:0 10px 30px 10px;
+    border:1px solid rgb(231, 228, 228);
+    box-shadow: 0 2px 5px rgb(148, 147, 147);
+    width: 280px;
+}
+.coures_picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_page_course_list h2{
+    text-align: center;
+    padding:20px 0 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.home_page_course_list p{
+    color:gray;
+}
+.home_page_course_compare{
+    padding:0 0 0 20px;
+}
+.home_page_course_compare_table{
+    padding:0 20px 0 20px;
+    margin: 20px auto;
+    width: 984px;
+    
+}
+.home_page_course_compare_table th{
+    background:#ebebeb;
+    border-top:solid 1px black ;
+    border-bottom: solid 1px black;
+    line-height: 35px;
+}
+.home_page_course_compare_table td{
+    text-align: center;
+    border-top:solid 1px black ;
+    border-bottom: solid 1px black;
+    line-height: 35px;
+}
+.conpare_text_green{
+    color:#00cc99;
+}
+.home_page_contact{
+    padding:50px 20px 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #ebebeb;
+}
+.contact_title h2{
+    font-size: 34px;
+    padding:20px 0 20px 0;
+}
+.home_page_input{
+    display: flex;
+    width: 400px;
+}
+.home_page_input input{
+    border-radius: 5px;
+    display: block;
+    padding:10px 0 15px 0;
+    margin: 20px 0 20px 0;
+    width: 300px;
+}
+.home_page_input input.home_page_submit{
+    width: 100px;
+    background: #00cc99;
+    border: #00cc99 1px solid;
+    color:white;
+    margin: 0 0 0 200px;
+    letter-spacing:5px
+
+}
+.home_page_input input.home_page_submit:hover{
+    background:red;
+    border: red 1px solid;
+}
+/*課程*/
+.Hexschool_course_page_header_and_banner{
+    background: url(https://upload.cc/i1/2021/06/03/TN5mlX.jpg);
+}
+.course_title_and_skill_picture{
+    padding:20px 50px 50px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course_title_and_skill_picture h2{
+    font-size: 46px;
+    color: white;
+    padding:50px 0px 20px 0;
+}
+.course_title_and_skill_picture h3{
+    font-size: 26px;
+    color:#00cc99;
+    padding:10px 0px 55px 0;
+
+}
+.course_title_and_skill_picture a{
+    text-align: center;
+    width: 180px;
+    display: block;
+    color:white;
+    font-size: 26px;
+    text-decoration: none;
+    border:1px solid #00cc99;
+    background: #00cc99;
+    border-radius: 5px;
+    padding:10px 30px 10px 30px;
+}
+.course_title_and_skill_picture span{
+    padding-left: 10px;
+}
+.course_title_and_skill_picture a:hover{
+    border:1px solid #cc0055;
+    background: #cc0055;
+}
+.course_teacher_introduce{
+    padding:30px 100px 30px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.course_teacher_introduce_title h2{
+    font-size: 36px;
+    color:#00cc99;
+    font-weight: bold;
+    padding:70px 0 0 0 ;
+}
+.course_teacher_introduce_title h3{
+    font-size: 36px;
+    font-weight: bold;
+    padding:10px 0 0 0 ;
+}
+.course_teacher_introduce ul{
+    padding:70px 0 0 0;
+    color:#b4b1b1;
+    font-size: 20px;
+}
+.course_teacher_introduce li{
+    padding:5px 0 5px 0;
+}
+.course_teacher_introduce span{
+    padding-left:10px;
+}
+.course_special{
+    padding:30px 100px 30px 100px;
+}
+.course_special_title,.course_summary_title,.FAQ_page_content_title,.FAQ_page_how_to_pay_title,.FAQ_page_how_to_refund_title{/*tittle共用元素*/
+    display:flex;
+    align-items: flex-end;
+}
+.course_special_title h2,.course_summary_title h2,.FAQ_page_content_title h2,.FAQ_page_how_to_pay_title h2,.FAQ_page_how_to_refund_title h2{/*tittle共用元素*/
+    font-size: 36px;
+    font-weight: bold;
+    color:#00cc99;
+}
+.course_special_title h3,.course_summary_title h3,.FAQ_page_content_title h3,.FAQ_page_how_to_pay_title h3,.FAQ_page_how_to_refund_title h3{/*tittle共用元素*/
+    padding:0 0 0 20px;
+    font-size: 22px;
+    color:#b4b1b1;
+}
+.course_special ul{
+    padding:30px 0 0 0;
+}
+.course_special li{
+    font-weight: bold;
+    line-height: 25px;
+}
+.course_special span{
+    padding:0 0 0 10px;
+}
+.course_summary{
+    padding:30px 100px 30px 100px;
+}
+.course_summary_title{
+    padding:0 0 30px 0;
+}
+.coures_summary_table{
+    width: 824px;
+    padding:0 100px 0 100px;
+}
+.coures_summary_table tr{
+    
+}
+.coures_summary_table td{
+    color:#b4b1b1;
+    padding:10px 0px  10px 10px;
+}
+td.gray_background{
+    background:#ebebeb ;
+    color:black;
+}
+.course_register{
+    background: #ebebeb;
+}
+.course_register_title_and_link{
+    display: flex;
+    justify-content: space-between;
+    padding:120px 100px 120px 100px;
+    
+}
+.course_register_title h3{
+    font-size: 36px;
+    font-weight: bold;
+    padding:10px 0 10px 0;
+}
+.course_register_link{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.course_register_title_and_link a{
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    border-radius: 5px;
+    border:1px solid #00cc99;
+    background:#00cc99 ;
+    margin-left: 25px;
+    padding:10px 20px 10px 20px;
+}
+.course_register_title_and_link a:hover{
+    border:1px solid #cc0055;
+    background: #cc0055;
+}
+.course_register_title_and_link span{
+    padding-left: 10px;
+}
+/*問答*/
+.Hexschool_FAQ_page_header_and_banner{
+    background: url(https://upload.cc/i1/2021/06/04/hkwsIc.jpg
+);
+}
+.Hexschoo_FAQ_page_banner_title{
+    padding:50px 0 30px 0;
+}
+.Hexschool_FAQ_page_header_and_banner h2{
+    font-size: 36px;
+    color:white;
+    text-align: center;
+    padding:10px 0 10px 0;
+}
+.Hexschool_FAQ_page_header_and_banner h3{
+    font-size: 24px;
+    color:#00cc99;
+    text-align: center;
+}
+.FAQ_page_form form{
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 5px;
+    padding-bottom: 120px; 
+}
+.FAQ_page_form{
+   position: relative;
+}
+.Hexschool_FAQ_page_header_and_banner img.magnifier{
+    position: absolute;
+    right:25%;
+    top:6px;
+}
+.Hexschool_FAQ_page_header_and_banner input{
+    background: white;
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+}
+.Hexschool_FAQ_page_content{
+    padding:30px 100px 30px 100px;
+}
+.FAQ_page_content_title,.FAQ_page_how_to_pay_title,.FAQ_page_how_to_refund_title{
+    padding:20px 0 20px 0;
+}
+.FAQ_page_common_question h2,.FAQ_page_pay_question h2,.FAQ_page_refund_question h2{
+    font-size: 24px;
+    font-weight: bold;
+    color:black;
+    padding:5px 0 5px 0;
+}
+.FAQ_page_common_question h3,.FAQ_page_pay_question h3,.FAQ_page_refund_question h3{
+    color:#b4b1b1;
+    line-height: 22px;
+    padding-bottom: 20px;
+}
+.FAQ_page_common_question a,.FAQ_page_pay_question a,.FAQ_page_refund_question a{
+    color:#00cc99;
+    text-decoration: none;
+}
+.FAQ_page_common_question a:hover,.FAQ_page_pay_question a:hover,.FAQ_page_refund_question a:hover{
+    color:red;
+}
+.little_space{
+    padding:0 5px 0 5px ;
+}
+.big_space{
+    padding:0 15px 0 15px ;
+}
+.Hexschool_FAQ_page_contact_us{
+    background: #b4b1b1;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 25px 50px 25px;
+}
+.FAQ_page_contact_us_title{
+    padding:20px 20px 0px 0px;
+}
+.Hexschool_FAQ_page_contact_us h2{
+    font-size: 36px;
+    font-weight: bold;
+    padding:20px 0 20px 0 ;
+}
+.Hexschool_FAQ_page_contact_us input,.Hexschool_FAQ_page_contact_us textarea{
+    display: block;
+    width: 350px;
+    margin:15px 0 15px 0;
+    padding:5px;
+    border-radius: 5px;
+}
+input.Hexschool_FAQ_page_contact_us_submit_button{
+    background: #00cc99;
+    width: 100px;
+    border: #00cc99;
+    color:white;
+    margin-left: 260px;
+    padding:10px 0px 10px 10px;
+    letter-spacing:10px
+}
+input.Hexschool_FAQ_page_contact_us_submit_button:hover{
+    background: #cc0055;
+    border:#cc0055;
