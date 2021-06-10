@@ -58,8 +58,16 @@ table {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background:rgb(0, 0, 0, 0.6)
-   
+    background:rgb(0, 0, 0, 0.6)   
+}
+.hexschool_logo a{
+    background: url(https://upload.cc/i1/2021/06/02/DHxvI1.png) no-repeat;
+    text-indent:101%;
+    overflow: hidden;
+    white-space: nowrap;
+    display:block;
+    width: 328px;
+    height: 75px;
 }
 .header ul{
     padding: 0 30px 0 30px;
@@ -68,9 +76,9 @@ table {
     justify-content:space-around ;
     align-items: center;
 }
-.header a{
+.header a.headerlist{
     width: 50px;
-    padding:23px 0 23px 0;
+    padding:27px 0 27px 0;
     display: block;
     text-decoration: none;
     text-align: center;
@@ -82,7 +90,7 @@ table {
 .header li:hover{
     border-bottom: 5px solid #00cc99;
 }
-.header a:hover{
+.header a.headerlist:hover{
     color:#00cc99;
 }
 .Hexschool_footer{
@@ -358,10 +366,7 @@ table {
     width: 824px;
     padding:0 100px 0 100px;
 }
-.coures_summary_table tr{
-    
-}
-.coures_summary_table td{
+.ures_summary_table td{
     color:#b4b1b1;
     padding:10px 0px  10px 10px;
 }
@@ -507,3 +512,4 @@ input.Hexschool_FAQ_page_contact_us_submit_button{
 input.Hexschool_FAQ_page_contact_us_submit_button:hover{
     background: #cc0055;
     border:#cc0055;
+}
