@@ -119,9 +119,13 @@ table {
 .Hexschool_home_page_header_and_banner{
     background: url(https://upload.cc/i1/2021/06/02/A0bLja.jpg
 );
+    min-height: 350px;
+    position: relative;
 }
 .Home_page_title{
-    padding: 30px 0 55px 30px;
+    position: absolute;
+    top:60px;
+    left:30px;
 }
 .Hexschool_home_page_header_and_banner h2{
     font-size: 36px;
@@ -240,31 +244,39 @@ table {
 }
 .home_page_input{
     display: flex;
-    width: 400px;
+    width: 300px;
+    flex-direction: column;
+    padding-right: 100px;
 }
 .home_page_input input{
     border-radius: 5px;
     display: block;
     padding:10px 0 15px 0;
     margin: 20px 0 20px 0;
-    width: 300px;
+    
 }
-.home_page_input input.home_page_submit{
+
+.home_page_submit_buttom{
+    display:flex;
+    justify-content:flex-end;
+}
+.home_page_submit_buttom input{
     width: 100px;
     background: #00cc99;
     border: #00cc99 1px solid;
     color:white;
-    margin: 0 0 0 200px;
     letter-spacing:5px
 
 }
-.home_page_input input.home_page_submit:hover{
+.home_page_submit_buttom input:hover{
     background:red;
     border: red 1px solid;
+    cursor:pointer;
 }
 /*課程*/
 .Hexschool_course_page_header_and_banner{
     background: url(https://upload.cc/i1/2021/06/03/TN5mlX.jpg);
+    min-height: 350px;
 }
 .course_title_and_skill_picture{
     padding:20px 50px 50px 20px;
@@ -307,11 +319,14 @@ table {
     display: flex;
     justify-content: space-between;
 }
+.course_teacher_introduce_title{
+    align-self:center;
+}
 .course_teacher_introduce_title h2{
     font-size: 36px;
     color:#00cc99;
     font-weight: bold;
-    padding:70px 0 0 0 ;
+    
 }
 .course_teacher_introduce_title h3{
     font-size: 36px;
@@ -319,16 +334,15 @@ table {
     padding:10px 0 0 0 ;
 }
 .course_teacher_introduce ul{
-    padding:70px 0 0 0;
+    align-self:center;
     color:#b4b1b1;
     font-size: 20px;
+    padding-left:10px;
 }
 .course_teacher_introduce li{
     padding:5px 0 5px 0;
 }
-.course_teacher_introduce span{
-    padding-left:10px;
-}
+
 .course_special{
     padding:30px 100px 30px 100px;
 }
@@ -370,10 +384,14 @@ table {
     color:#b4b1b1;
     padding:10px 0px  10px 10px;
 }
-td.gray_background{
+.coures_summary_table td{
+    padding:10px 0 10px 0;
+}
+.coures_summary_table tr:nth-child(odd){
     background:#ebebeb ;
     color:black;
 }
+
 .course_register{
     background: #ebebeb;
 }
@@ -400,7 +418,6 @@ td.gray_background{
     border-radius: 5px;
     border:1px solid #00cc99;
     background:#00cc99 ;
-    margin-left: 25px;
     padding:10px 20px 10px 20px;
 }
 .course_register_title_and_link a:hover{
@@ -413,10 +430,14 @@ td.gray_background{
 /*問答*/
 .Hexschool_FAQ_page_header_and_banner{
     background: url(https://upload.cc/i1/2021/06/04/hkwsIc.jpg
-);
+    );
+    min-height: 350px;
+    position: relative;
 }
 .Hexschoo_FAQ_page_banner_title{
-    padding:50px 0 30px 0;
+    position: absolute;
+    top:100px;
+    left:35%;
 }
 .Hexschool_FAQ_page_header_and_banner h2{
     font-size: 36px;
@@ -429,8 +450,8 @@ td.gray_background{
     color:#00cc99;
     text-align: center;
 }
-.FAQ_page_form form{
-    margin: 0 auto;
+.FAQ_page_form{
+    margin: 120px auto;
     width: 500px;
     border-radius: 5px;
     padding-bottom: 120px; 
@@ -438,10 +459,11 @@ td.gray_background{
 .FAQ_page_form{
    position: relative;
 }
-.Hexschool_FAQ_page_header_and_banner img.magnifier{
+.FAQ_page_form img.magnifier{
     position: absolute;
-    right:25%;
+    right:1%;
     top:6px;
+    cursor: pointer;
 }
 .Hexschool_FAQ_page_header_and_banner input{
     background: white;
@@ -450,7 +472,7 @@ td.gray_background{
     height: 40px;
 }
 .Hexschool_FAQ_page_content{
-    padding:30px 100px 30px 100px;
+    padding:0px 100px 30px 100px;
 }
 .FAQ_page_content_title,.FAQ_page_how_to_pay_title,.FAQ_page_how_to_refund_title{
     padding:20px 0 20px 0;
@@ -473,11 +495,16 @@ td.gray_background{
 .FAQ_page_common_question a:hover,.FAQ_page_pay_question a:hover,.FAQ_page_refund_question a:hover{
     color:red;
 }
+.FAQ_page_pay_question ul{
+    padding-left:15px;
+}
 .little_space{
     padding:0 5px 0 5px ;
 }
-.big_space{
-    padding:0 15px 0 15px ;
+.FAQ_page_refund_question li{
+    color:#b4b1b1;
+    line-height: 22px;
+    padding-bottom: 10px;
 }
 .Hexschool_FAQ_page_contact_us{
     background: #b4b1b1;
@@ -500,16 +527,24 @@ td.gray_background{
     padding:5px;
     border-radius: 5px;
 }
+.Hexschool_FAQ_page_contact_us textarea{
+    height: 150px;
+}
+.course_page_input_and_textarea{
+    display:flex;
+    flex-direction: column;
+}
 input.Hexschool_FAQ_page_contact_us_submit_button{
     background: #00cc99;
     width: 100px;
     border: #00cc99;
     color:white;
-    margin-left: 260px;
+    align-self: flex-end;
     padding:10px 0px 10px 10px;
     letter-spacing:10px
 }
 input.Hexschool_FAQ_page_contact_us_submit_button:hover{
     background: #cc0055;
     border:#cc0055;
+    cursor: pointer;
 }
